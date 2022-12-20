@@ -331,6 +331,10 @@
     </div>
 
 </div>
+
+<!-- Custom styles for this page -->
+   <!-- Custom styles for this page -->
+
 <!-- Page level plugins -->
 <script src="{{asset('/vendor/chart.js/Chart.min.js') }}"></script>
 
