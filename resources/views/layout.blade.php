@@ -56,12 +56,12 @@
                 Masters
             </div>
 
-            <!-- Nav Item - RoomType Master -->
+            <!-- RoomType Master -->
             <li class="nav-item">
                 <a class="nav-link @if(!request()->is('/admin/roomtype*'))collapsed @endif" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Room Type:</span>
+                    <span>Room Type</span>
                 </a>
                 <div id="collapseTwo" class="collapse @if(request()->is('/admin/roomtype*'))show @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -71,18 +71,35 @@
                     </div>
                 </div>
             </li>
-            <!-- Nav Item - Room Master -->
+
+            <!--  Room Master -->
             <li class="nav-item">
                 <a class="nav-link  @if(!request()->is('/admin/room*'))collapsed @endif" href="#" data-toggle="collapse" data-target="#roomMaster"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-box"></i>
-                    <span>Room:</span>
+                    <span>Room</span>
                 </a>
                 <div id="roomMaster" class="collapse @if(request()->is('/admin/room*'))show @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
 
                         <a class="collapse-item" href="{{ url('admin/room/create') }}">Add New</a>
                         <a class="collapse-item" href="{{ url('admin/room') }}">View All</a>
+                    </div>
+                </div>
+            </li>
+
+            <!--  CustomerMaster -->
+            <li class="nav-item">
+                <a class="nav-link  @if(!request()->is('/admin/customer*'))collapsed @endif" href="#" data-toggle="collapse" data-target="#CustomerMaster"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Customers</span>
+                </a>
+                <div id="CustomerMaster" class="collapse @if(request()->is('/admin/customer*'))show @endif" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <a class="collapse-item" href="{{ url('admin/customer/create') }}">Add New</a>
+                        <a class="collapse-item" href="{{ url('admin/customer') }}">View All</a>
                     </div>
                 </div>
             </li>
